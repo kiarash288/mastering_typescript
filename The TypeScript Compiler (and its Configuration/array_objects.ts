@@ -3,6 +3,7 @@ let hobies = ['Sports', 'Cooking'];
 
 let userss: Array<string | number>;
 
+
 users = [1, 'Max'];
 users = [5, 1];
 users = ['Max', 'Anna'];
@@ -41,3 +42,11 @@ dataa = {
     entry1: 1,
     entry2: 'some string'
 }
+
+
+let students = ['Max', 'Anna', 1, 2]; Array<string | number>
+
+let studentss = {
+    name: 'Max',
+    age: '22',
+} satisfies Record<string, number | string>;

@@ -8,3 +8,4 @@ function process(val: unknown) {
     val.log();
   }
 }
+
