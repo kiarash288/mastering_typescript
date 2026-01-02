@@ -64,6 +64,31 @@ abstract class UIElement {
   }
 }
 
+abstract class Student {
+  constructor(public name:string, public age: number , public id: number, public major: string){}
+
+  information() {
+     console.log(`${this.name} with age of ${this.age} and id of ${this.id} and major of ${this.major}`)
+  }
+}
+class Max extends Student {
+  constructor(
+    name:string = "Max",
+    age:number = 20,
+    id:number = 123456,
+    major:string = "Computer Science",
+
+  ) {
+    super(name, age, id, major);
+  }
+
+  information() {
+    console.log(`${this.name} with age of ${this.age} and id of ${this.id} and major of ${this.major} and i am a max`)
+  }
+}
+
+
+
 // let uiElement = new UIElement();
 
 class SideDrawerElement extends UIElement {

@@ -29,3 +29,20 @@ class User<T> {
 
 const user = new User('i1');
 user.id
+
+
+function creat <T extends object , U extends any[]>(a: T, b:U) {
+  return { ...a, ...b };
+}
+
+type dataStorage<T> = {
+  [key: string]: T;
+}
+
+let data: dataStorage<string> = {
+  name: 'Max',
+}
+
+let data2: dataStorage<number> = {
+  age: 35,
+}

@@ -11,6 +11,7 @@ const dbSource: DBSource = {
 };
 
 type Source = FileSource | DBSource;
+type Source2 = FileSource & DBSource;
 
 function isFile(source: Source) {
   return source.type === 'file';

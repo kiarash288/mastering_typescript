@@ -4,8 +4,10 @@ type DataStore = {
 
 let store : DataStore = {};
 
+// Tuple Types
 
 let roles = ['admin', 'guest', 'editor'] as const;
+
 
 const dataEntries = {
     entry1: 0.51,

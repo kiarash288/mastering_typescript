@@ -12,3 +12,13 @@ type User = {
 
 let input = '';
 const didProvideInput = input ?? false;
+
+type Role = 'admin' | 'guest';
+
+type Userr = {
+  name: string;
+  age: number;
+  role?: Role;
+}
+
+

@@ -9,3 +9,11 @@ function process(val: unknown) {
   }
 }
 
+function (message: unknown) {
+  if (typeof message == 'string') {
+    return 'message is a string';
+  if (typeof message == 'number') {
+    return 'message is a number';
+  }
+  }
+}

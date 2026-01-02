@@ -1,8 +1,14 @@
 let hobies = ['Sports', 'Cooking'];
 // hobies.push(10);  => ارور میگیرد
 
-let userss: Array<string | number>;
-
+let userss: Array<string | number> = ['Max', 1];
+  
+let objects: Record<string, number | boolean | string[] > = {
+    name: 'Max',
+    age: 22,
+    isStudent: true,
+    hobbies: ['Sports', 'Cooking'],
+};
 
 users = [1, 'Max'];
 users = [5, 1];

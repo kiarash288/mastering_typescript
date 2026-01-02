@@ -6,6 +6,13 @@ interface Authenticatable {
   logout(): void;
 }
 
+let user : Authenticatable = {
+  email: 'test@example.com',
+  password: 'abc1',
+  login() {},
+  logout() {},
+}
+
 interface AuthenticatableAdmin extends Authenticatable {
   role: 'admin' | 'superadmin';
 }

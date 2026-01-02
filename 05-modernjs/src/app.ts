@@ -10,6 +10,7 @@ const person = {
   age: 30,
 }
 
+
 const copiedPerson = {...person};
 
 
@@ -29,3 +30,5 @@ const button = document.querySelector('button');
 if (button) {
   button.addEventListener('click', event => console.log(event));
 }
+
+
